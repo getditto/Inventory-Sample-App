@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lBq-lj-wpQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Flight List View Controller-->
+        <scene sceneID="iSh-WT-oJS">
+            <objects>
+                <viewController id="lBq-lj-wpQ" customClass="FlightListViewController" customModule="flight_inventory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lwe-rb-C68">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhD-UI-tBd">
+                                <rect key="frame" x="82" y="244" width="250" height="44"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.54117647058823526" blue="0.84705882352941175" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="KMw-47-q7t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Flight 001">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMH-VA-LFV">
+                                <rect key="frame" x="82" y="328" width="250" height="44"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.54117647059999996" blue="0.84705882349999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="EOS-Y4-xif"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Flight 002">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVQ-MV-juN">
+                                <rect key="frame" x="82" y="412" width="250" height="44"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.54117647059999996" blue="0.84705882349999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="T4W-JW-L1t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Flight 003">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KzX-LU-pob"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QVQ-MV-juN" firstAttribute="centerX" secondItem="KzX-LU-pob" secondAttribute="centerX" id="COS-dF-oyW"/>
+                            <constraint firstItem="FMH-VA-LFV" firstAttribute="centerX" secondItem="KzX-LU-pob" secondAttribute="centerX" id="JdO-NN-60k"/>
+                            <constraint firstItem="FMH-VA-LFV" firstAttribute="top" secondItem="hhD-UI-tBd" secondAttribute="bottom" constant="40" id="P5j-a7-ZRg"/>
+                            <constraint firstItem="hhD-UI-tBd" firstAttribute="top" secondItem="KzX-LU-pob" secondAttribute="top" constant="200" id="frx-4K-7AI"/>
+                            <constraint firstItem="QVQ-MV-juN" firstAttribute="top" secondItem="FMH-VA-LFV" secondAttribute="bottom" constant="40" id="pEr-FF-t4h"/>
+                            <constraint firstItem="hhD-UI-tBd" firstAttribute="centerX" secondItem="KzX-LU-pob" secondAttribute="centerX" id="wvP-Dg-Fsq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VX8-ez-c7B"/>
+                    <connections>
+                        <outletCollection property="flightButtons" destination="hhD-UI-tBd" collectionClass="NSMutableArray" id="ewA-F7-YlL"/>
+                        <outletCollection property="flightButtons" destination="FMH-VA-LFV" collectionClass="NSMutableArray" id="0mM-ly-PyY"/>
+                        <outletCollection property="flightButtons" destination="QVQ-MV-juN" collectionClass="NSMutableArray" id="seZ-Ib-pdz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2P4-4v-WC0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="963.76811594202911" y="53.571428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
