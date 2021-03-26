@@ -6,6 +6,6 @@ target 'flight-inventory' do
   use_frameworks!
 
   # Pods for flight-inventory
-  pod 'DittoKitSwift', '0.3.5'
+  pod 'DittoSwift', '1.0.0-alpha9'
 
 end

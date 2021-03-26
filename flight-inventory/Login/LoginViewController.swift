@@ -1,5 +1,5 @@
 import UIKit
-import DittoKitSwift
+import DittoSwift
 
 final class LoginViewController: UIViewController {
 
@@ -28,7 +28,7 @@ final class LoginViewController: UIViewController {
             showEmptyUsernameAlert(); return
         }
 
-        DittoKit.deviceName = username
+        Ditto.deviceName = username
 
         let userInfo = UserInfo(name: username, isAdmin: adminSwitch.isOn)
         let sb = UIStoryboard(name: "Flight", bundle: nil)

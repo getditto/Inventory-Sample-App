@@ -1,5 +1,5 @@
 import UIKit
-import DittoKitSwift
+import DittoSwift
 
 final class ConnectionListViewController: UIViewController {
 
